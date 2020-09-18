@@ -319,7 +319,7 @@ func modifySummaryForGatewayService(
 		}
 		dnsAddresses = append(dnsAddresses, serviceIngressDNSName(
 			gwsvc.Service.Name,
-			cfg.Datacenter,
+			gwsvc.Service.Datacenter,
 			domain,
 			&gwsvc.Service.EnterpriseMeta,
 		))
